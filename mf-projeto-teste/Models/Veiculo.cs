@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace mf_projeto_teste.Models
 {
@@ -19,9 +20,11 @@ namespace mf_projeto_teste.Models
         public string Placa { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informa o Ano de Fabricação")]
+        [Display(Name = "Ano de Fabricação")]
         public int AnoFabricação { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informa o Ano do Modelo")]
+        [Display(Name = "Ano de Modelo")]
         public int AnoModelo { get; set; }
     }
 }
