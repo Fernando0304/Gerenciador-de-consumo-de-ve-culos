@@ -15,7 +15,7 @@ namespace mf_projeto_teste.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "veiculos");
         }
 
         public IActionResult Privacy()
