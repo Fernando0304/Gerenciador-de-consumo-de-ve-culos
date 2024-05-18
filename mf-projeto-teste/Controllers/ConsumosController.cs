@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Gerenciador_de_consumo_de_veiculos.Models;
 using mf_projeto_teste.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Gerenciador_de_consumo_de_veiculos.Controllers
 {
+    [Authorize]
     public class ConsumosController : Controller
     {
         private readonly AppDbContext _context;
